@@ -11,13 +11,55 @@ import UIKit
 class ViewController: UIViewController {
     
     let videoCategorie: [[UIColor]] = generateRandomData()
+    let videos = [Video]()
 
     @IBOutlet var videoView: UIView!
     @IBOutlet var videoTableView: UITableView!
     
+    var apiKey = "AIzaSyCLgeLAV-oQCA2x63EuCUqcekrMVE9uzHE"
+    var channelID = "UCcKJov9QO24HcGaP4w2wweg"
+    var uploadsID = "UUcKJov9QO24HcGaP4w2wweg"
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+//        func performGetRequest(targetUrl: URL!, completion: (data: Data?, HTTPSStatusCode: Int, error: Error?) -> Void) {
+//            
+//        }
+//        var urlString = "https://www.googleapis.com/youtube/v3/channels?part=contentDetails,snippet&id=\(channelID)&key=\(apiKey)"
+        self.test()
+
+    }
+    
+    func test() {
+        let url = URL(string: "https://www.googleapis.com/youtube/v3/channels?part=contentDetails,snippet&id=\(channelID)&key=\(apiKey)")
+        let upload = URL(string: "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=\(uploadsID)&key=\(apiKey)")
+        print(upload)
+        
+        let task = URLSession.shared.dataTask(with: upload!) { data, response, error in
+            guard error == nil else {
+                print(error)
+                return
+            }
+            guard let data = data else {
+                print("Data is empty")
+                return
+            }
+            
+            let jsonResult = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: AnyObject]
+            
+            let items = jsonResult["items"] as! [[String: AnyObject]]
+            
+            for item in items {
+               
+                print("SNIPPET = \(item["snippet"]!["title"]!)")
+            }
+//            print(items)
+        }
+        
+        task.resume()
     }
 }
 

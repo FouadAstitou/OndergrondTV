@@ -15,6 +15,7 @@
 		2B8D052E1DCC87BA00490D4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B8D052C1DCC87BA00490D4C /* LaunchScreen.storyboard */; };
 		2B8D05391DCC87BA00490D4C /* OndergrondTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8D05381DCC87BA00490D4C /* OndergrondTVTests.swift */; };
 		2B8D05441DCC8C3600490D4C /* VideoCategorieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8D05431DCC8C3600490D4C /* VideoCategorieCell.swift */; };
+		2BEB43971DEC8ADE0007CB84 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB43961DEC8ADE0007CB84 /* Video.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		2B8D05381DCC87BA00490D4C /* OndergrondTVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OndergrondTVTests.swift; sourceTree = "<group>"; };
 		2B8D053A1DCC87BA00490D4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B8D05431DCC8C3600490D4C /* VideoCategorieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCategorieCell.swift; sourceTree = "<group>"; };
+		2BEB43961DEC8ADE0007CB84 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 		2B8D05141DCC87BA00490D4C = {
 			isa = PBXGroup;
 			children = (
+				2BEB43961DEC8ADE0007CB84 /* Video.swift */,
 				2B8D051F1DCC87BA00490D4C /* OndergrondTV */,
 				2B8D05371DCC87BA00490D4C /* OndergrondTVTests */,
 				2B8D051E1DCC87BA00490D4C /* Products */,
@@ -211,6 +214,7 @@
 				2B8D05441DCC8C3600490D4C /* VideoCategorieCell.swift in Sources */,
 				2B8D05231DCC87BA00490D4C /* ViewController.swift in Sources */,
 				2B8D05211DCC87BA00490D4C /* AppDelegate.swift in Sources */,
+				2BEB43971DEC8ADE0007CB84 /* Video.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +422,7 @@
 				2B8D053F1DCC87BA00490D4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2B8D05401DCC87BA00490D4C /* Build configuration list for PBXNativeTarget "OndergrondTVTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +431,7 @@
 				2B8D05421DCC87BA00490D4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

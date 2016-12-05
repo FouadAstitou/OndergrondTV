@@ -16,6 +16,7 @@
 		2B8D05391DCC87BA00490D4C /* OndergrondTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8D05381DCC87BA00490D4C /* OndergrondTVTests.swift */; };
 		2B8D05441DCC8C3600490D4C /* VideoCategorieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8D05431DCC8C3600490D4C /* VideoCategorieCell.swift */; };
 		2BEB43971DEC8ADE0007CB84 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB43961DEC8ADE0007CB84 /* Video.swift */; };
+		2BEB43991DED789C0007CB84 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB43981DED789C0007CB84 /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		2B8D053A1DCC87BA00490D4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B8D05431DCC8C3600490D4C /* VideoCategorieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCategorieCell.swift; sourceTree = "<group>"; };
 		2BEB43961DEC8ADE0007CB84 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		2BEB43981DED789C0007CB84 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				2B8D05201DCC87BA00490D4C /* AppDelegate.swift */,
+				2BEB43981DED789C0007CB84 /* API.swift */,
 				2B8D05431DCC8C3600490D4C /* VideoCategorieCell.swift */,
 				2B8D05221DCC87BA00490D4C /* ViewController.swift */,
 				2B8D05241DCC87BA00490D4C /* Main.storyboard */,
@@ -214,6 +217,7 @@
 				2B8D05441DCC8C3600490D4C /* VideoCategorieCell.swift in Sources */,
 				2B8D05231DCC87BA00490D4C /* ViewController.swift in Sources */,
 				2B8D05211DCC87BA00490D4C /* AppDelegate.swift in Sources */,
+				2BEB43991DED789C0007CB84 /* API.swift in Sources */,
 				2BEB43971DEC8ADE0007CB84 /* Video.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

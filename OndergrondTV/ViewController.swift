@@ -7,23 +7,50 @@
 //
 
 import UIKit
+import youtube_ios_player_helper
+
+struct HeaderStructure {
+    var image: UIImage
+    var title: String
+}
 
 class ViewController: UIViewController {
     
     let videoCategorie: [[UIColor]] = generateRandomData()
-    let videos = [Video]()
+    var videos = [Video]()
+    
+    var arrayOfHeaders = [HeaderStructure]()
+    var headerViewHeight: CGFloat = 60
 
-    @IBOutlet var videoView: UIView!
     @IBOutlet var videoTableView: UITableView!
+    @IBOutlet var videoView: YTPlayerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-
+        self.videoView.delegate = self
+        
+        self.arrayOfHeaders = [HeaderStructure.init(image: #imageLiteral(resourceName: "ondergrondlogo"), title: "Ondergrond TV"), HeaderStructure.init(image: #imageLiteral(resourceName: "ondergrondlogo"), title: "Ondergrond TV"), HeaderStructure.init(image: #imageLiteral(resourceName: "ondergrondlogo"), title: "Ondergrond TV")]
+        
         API.fetchVideoPlaylist { (videoResult) in
-            print(videoResult)
+            DispatchQueue.main.async {
+                
+                switch videoResult {
+                case let .Success(videos):
+                    self.videos = videos
+                    print("Successfully found \(videos.count) items.")
+                    
+                case let .Failure(error):
+                    self.videos.removeAll()
+                    print("Error fetching videos, error: \(error)")
+                    
+                case .None:
+                    break
+                }
+            }
         }
+
 
     }
     
@@ -33,15 +60,21 @@ extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
-        return videoCategorie.count
+        return 3 //videoCategorie.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let cell = tableView.dequeueReusableCell(withIdentifier: "VideoCategorieCell", for: indexPath) as! VideoCategorieCell
         
-        return cell
+        return cell 
     }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return arrayOfHeaders.count
+    }
+    
+   
 }
 
 extension ViewController: UITableViewDelegate {
@@ -52,19 +85,44 @@ extension ViewController: UITableViewDelegate {
 
         videoCategorieCell.setCollectionViewDataSourceDelegate(dataSourceDelegate: self, forRow: indexPath.row)
     }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return self.headerViewHeight
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = Bundle.main.loadNibNamed("HeaderView", owner: self, options: nil)?.first as! HeaderView
+        
+        headerView.headerImageView.image = arrayOfHeaders[section].image
+        headerView.headerLabel.text = arrayOfHeaders[section].title
+        
+        return headerView
+        
+    }
 }
 
-extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, YTPlayerViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return videoCategorie[collectionView.tag].count
+        return videos.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "VideoCell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "VideoCell", for: indexPath) as! VideoCell
         
-        cell.backgroundColor = videoCategorie[collectionView.tag][indexPath.item]
+//        cell.backgroundColor = videoCategorie[collectionView.tag][indexPath.item]
 
+        cell.video = self.videos[indexPath.row]
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let video = videos[indexPath.item]
+        let videoID = video.ID
+        self.videoView.load(withVideoId: videoID)
+        
+    }
+    func playerViewDidBecomeReady(_ playerView: YTPlayerView) {
+        self.videoView.playVideo()
     }
 }
 

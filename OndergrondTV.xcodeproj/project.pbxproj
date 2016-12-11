@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B098DA91DF8392A002669A4 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B098DA81DF8392A002669A4 /* VideoCell.swift */; };
+		2B098DAC1DF85A4D002669A4 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B098DAA1DF85A4D002669A4 /* HeaderView.swift */; };
+		2B098DAD1DF85A4D002669A4 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B098DAB1DF85A4D002669A4 /* HeaderView.xib */; };
+		2B098DE91DFAE7EE002669A4 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B098DE81DFAE7EE002669A4 /* PlayerViewController.swift */; };
 		2B8D05211DCC87BA00490D4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8D05201DCC87BA00490D4C /* AppDelegate.swift */; };
 		2B8D05231DCC87BA00490D4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8D05221DCC87BA00490D4C /* ViewController.swift */; };
 		2B8D05261DCC87BA00490D4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B8D05241DCC87BA00490D4C /* Main.storyboard */; };
@@ -17,6 +21,8 @@
 		2B8D05441DCC8C3600490D4C /* VideoCategorieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8D05431DCC8C3600490D4C /* VideoCategorieCell.swift */; };
 		2BEB43971DEC8ADE0007CB84 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB43961DEC8ADE0007CB84 /* Video.swift */; };
 		2BEB43991DED789C0007CB84 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEB43981DED789C0007CB84 /* API.swift */; };
+		63A0DE0E9964DB3560DB8FA8 /* Pods_OndergrondTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D7D602549554A858378D6FB /* Pods_OndergrondTV.framework */; };
+		8A4FDD553E221C545A44EDC6 /* Pods_OndergrondTVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD5043A5AA8A96D58947C50A /* Pods_OndergrondTVTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +36,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16FA65AD7AE58576A82B8906 /* Pods-OndergrondTVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OndergrondTVTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OndergrondTVTests/Pods-OndergrondTVTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2B098DA81DF8392A002669A4 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		2B098DAA1DF85A4D002669A4 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		2B098DAB1DF85A4D002669A4 /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		2B098DE81DFAE7EE002669A4 /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		2B098DEB1DFAF214002669A4 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		2B8D051D1DCC87BA00490D4C /* OndergrondTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OndergrondTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B8D05201DCC87BA00490D4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B8D05221DCC87BA00490D4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +56,11 @@
 		2B8D05431DCC8C3600490D4C /* VideoCategorieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCategorieCell.swift; sourceTree = "<group>"; };
 		2BEB43961DEC8ADE0007CB84 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		2BEB43981DED789C0007CB84 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		6D7D602549554A858378D6FB /* Pods_OndergrondTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OndergrondTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA03563AAF7CC5783E9ACC2F /* Pods-OndergrondTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OndergrondTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OndergrondTV/Pods-OndergrondTV.debug.xcconfig"; sourceTree = "<group>"; };
+		BC53271C03C48EECC36A4C9A /* Pods-OndergrondTVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OndergrondTVTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OndergrondTVTests/Pods-OndergrondTVTests.release.xcconfig"; sourceTree = "<group>"; };
+		BD5043A5AA8A96D58947C50A /* Pods_OndergrondTVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OndergrondTVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA200983211E19BB0B50A2EA /* Pods-OndergrondTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OndergrondTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-OndergrondTV/Pods-OndergrondTV.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63A0DE0E9964DB3560DB8FA8 /* Pods_OndergrondTV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,12 +76,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A4FDD553E221C545A44EDC6 /* Pods_OndergrondTVTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18A8D0DAD33FADCA41C017DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA03563AAF7CC5783E9ACC2F /* Pods-OndergrondTV.debug.xcconfig */,
+				FA200983211E19BB0B50A2EA /* Pods-OndergrondTV.release.xcconfig */,
+				16FA65AD7AE58576A82B8906 /* Pods-OndergrondTVTests.debug.xcconfig */,
+				BC53271C03C48EECC36A4C9A /* Pods-OndergrondTVTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2B8D05141DCC87BA00490D4C = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +101,8 @@
 				2B8D051F1DCC87BA00490D4C /* OndergrondTV */,
 				2B8D05371DCC87BA00490D4C /* OndergrondTVTests */,
 				2B8D051E1DCC87BA00490D4C /* Products */,
+				18A8D0DAD33FADCA41C017DE /* Pods */,
+				AF5A5D26A0A57AA44FFAD9FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,7 +120,12 @@
 			children = (
 				2B8D05201DCC87BA00490D4C /* AppDelegate.swift */,
 				2BEB43981DED789C0007CB84 /* API.swift */,
+				2B098DEB1DFAF214002669A4 /* Bridging-Header.h */,
+				2B098DAA1DF85A4D002669A4 /* HeaderView.swift */,
+				2B098DAB1DF85A4D002669A4 /* HeaderView.xib */,
+				2B098DE81DFAE7EE002669A4 /* PlayerViewController.swift */,
 				2B8D05431DCC8C3600490D4C /* VideoCategorieCell.swift */,
+				2B098DA81DF8392A002669A4 /* VideoCell.swift */,
 				2B8D05221DCC87BA00490D4C /* ViewController.swift */,
 				2B8D05241DCC87BA00490D4C /* Main.storyboard */,
 				2B8D052A1DCC87BA00490D4C /* Assets.xcassets */,
@@ -108,6 +145,15 @@
 			path = OndergrondTVTests;
 			sourceTree = "<group>";
 		};
+		AF5A5D26A0A57AA44FFAD9FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D7D602549554A858378D6FB /* Pods_OndergrondTV.framework */,
+				BD5043A5AA8A96D58947C50A /* Pods_OndergrondTVTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,9 +161,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B8D053D1DCC87BA00490D4C /* Build configuration list for PBXNativeTarget "OndergrondTV" */;
 			buildPhases = (
+				8005E3C564A29FD80DFC396C /* [CP] Check Pods Manifest.lock */,
 				2B8D05191DCC87BA00490D4C /* Sources */,
 				2B8D051A1DCC87BA00490D4C /* Frameworks */,
 				2B8D051B1DCC87BA00490D4C /* Resources */,
+				26C8A5A724DFC40D34EC4EF8 /* [CP] Embed Pods Frameworks */,
+				1518152859CF1D51075C720C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B8D05401DCC87BA00490D4C /* Build configuration list for PBXNativeTarget "OndergrondTVTests" */;
 			buildPhases = (
+				12F8142FB671E9111D08F9C2 /* [CP] Check Pods Manifest.lock */,
 				2B8D05301DCC87BA00490D4C /* Sources */,
 				2B8D05311DCC87BA00490D4C /* Frameworks */,
 				2B8D05321DCC87BA00490D4C /* Resources */,
+				032D88FA53BA75098B1B9D8E /* [CP] Embed Pods Frameworks */,
+				E7F7E2977DC9C7A0A4968599 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,6 +248,7 @@
 				2B8D052E1DCC87BA00490D4C /* LaunchScreen.storyboard in Resources */,
 				2B8D052B1DCC87BA00490D4C /* Assets.xcassets in Resources */,
 				2B8D05261DCC87BA00490D4C /* Main.storyboard in Resources */,
+				2B098DAD1DF85A4D002669A4 /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,17 +261,113 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		032D88FA53BA75098B1B9D8E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OndergrondTVTests/Pods-OndergrondTVTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		12F8142FB671E9111D08F9C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1518152859CF1D51075C720C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OndergrondTV/Pods-OndergrondTV-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		26C8A5A724DFC40D34EC4EF8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OndergrondTV/Pods-OndergrondTV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8005E3C564A29FD80DFC396C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E7F7E2977DC9C7A0A4968599 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OndergrondTVTests/Pods-OndergrondTVTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2B8D05191DCC87BA00490D4C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2B8D05291DCC87BA00490D4C /* OndergrondTV.xcdatamodeld in Sources */,
+				2B098DA91DF8392A002669A4 /* VideoCell.swift in Sources */,
 				2B8D05441DCC8C3600490D4C /* VideoCategorieCell.swift in Sources */,
 				2B8D05231DCC87BA00490D4C /* ViewController.swift in Sources */,
 				2B8D05211DCC87BA00490D4C /* AppDelegate.swift in Sources */,
+				2B098DE91DFAE7EE002669A4 /* PlayerViewController.swift in Sources */,
 				2BEB43991DED789C0007CB84 /* API.swift in Sources */,
 				2BEB43971DEC8ADE0007CB84 /* Video.swift in Sources */,
+				2B098DAC1DF85A4D002669A4 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +454,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "OndergrondTV/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -346,6 +496,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "OndergrondTV/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -353,6 +504,7 @@
 		};
 		2B8D053E1DCC87BA00490D4C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA03563AAF7CC5783E9ACC2F /* Pods-OndergrondTV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 75RQ64B2DZ;
@@ -360,12 +512,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = f.astitou.OndergrondTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		2B8D053F1DCC87BA00490D4C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA200983211E19BB0B50A2EA /* Pods-OndergrondTV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 75RQ64B2DZ;
@@ -373,12 +527,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = f.astitou.OndergrondTV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		2B8D05411DCC87BA00490D4C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16FA65AD7AE58576A82B8906 /* Pods-OndergrondTVTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -394,6 +550,7 @@
 		};
 		2B8D05421DCC87BA00490D4C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC53271C03C48EECC36A4C9A /* Pods-OndergrondTVTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

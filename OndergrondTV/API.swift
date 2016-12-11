@@ -90,10 +90,11 @@ struct API {
     static func videoFromJSONObject(json: [String : AnyObject]) -> Video? {
         print(json)
         guard
-            let videoID = json["id"] as? String,
-            let videoTitle = json["snippet"]?["title"] as? String,
-            let thumbnails = json["snippet"]?["thumbnails"] as? [String: AnyObject],
-            let defaultThumbnail = thumbnails["default"] as? [String: AnyObject],
+            let videoSnippet = json["snippet"] as? [String: AnyObject],
+            let videoID = videoSnippet["resourceId"]?["videoId"] as? String,
+            let videoTitle = videoSnippet["title"] as? String,
+            let thumbnails = videoSnippet["thumbnails"] as? [String: AnyObject],
+            let defaultThumbnail = thumbnails["high"] as? [String: AnyObject],
             let thumbnailURL = defaultThumbnail["url"] as? String
             
             else {
